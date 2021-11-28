@@ -1,0 +1,46 @@
+body {
+  font-family: HelveticaNeueCyr;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $black;
+  &._active {
+    overflow: hidden;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 59px;
+}
+h2 {
+  font-weight: 550;
+  font-size: 38px;
+  line-height: 51px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+a {
+  font-family: HelveticaNeueCyr;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 51px;
+  color: $blue;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

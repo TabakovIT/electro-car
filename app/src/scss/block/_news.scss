@@ -1,0 +1,133 @@
+.news {
+  margin-bottom: 159px;
+
+  &__title {
+    margin-bottom: 49px;
+    @media(max-width: 767.68px) {
+      margin: 27px 15px;
+    }
+
+    span {
+      color: $blue;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    @media (max-width: 767.98px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    border-right: 1px solid #4a494952;
+    padding-right: 39px;
+    @media (max-width: 767.98px) {
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  &__top {
+    margin-bottom: 20px;
+
+  }
+
+  &__bottom-time {
+    color: #3E3E3E;
+    margin-bottom: 5px;
+  }
+
+  &__bottom-title {
+    margin-bottom: 20px;
+  }
+
+  &__bottom-desc {
+    margin-bottom: 10px;
+  }
+
+  &__category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  &__images {
+    transition: opacity 0.9s ease-in-out;
+    opacity: 0;
+  }
+
+  &__category-item {
+    display: flex;
+    border: 1px solid silver;
+    border-left: none;
+    transition: background-color 0.9s ease-in-out;
+
+    &:hover {
+      background-color: #00ADEE;
+
+      .news__images {
+        opacity: 1;
+      }
+
+
+
+      .news__content-link,
+      .news__content {
+        color: $while;
+        font-weight: 900;
+      }
+
+      .news__content-title {
+        font-weight: 900;
+      }
+    }
+
+    &:nth-child(2n) {
+      border-right: none;
+    }
+  }
+&__img{
+  width: 100%;
+}
+  &__content {
+    position: relative;
+    padding: 40px 40px 40px 62px;
+  }
+
+  &__content-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &__content-link {
+    position: absolute;
+    bottom: 10px;
+    color: $black;
+  }
+
+  &__content-desc {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 300px;
+  }
+
+  @media (max-width: 767.98px) {
+    .container {
+      margin: 0 -15px;
+    }
+    &__bottom {
+      margin: 0 15px;
+      line-height: 22px;
+    }
+  }
+
+}

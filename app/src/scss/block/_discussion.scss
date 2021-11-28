@@ -1,0 +1,104 @@
+.discussion{
+  margin-bottom: 40px;
+  &__title{
+    margin-bottom: 70px;
+  }
+  &__slider{
+    &-wrapper{
+
+    }
+  }
+}
+
+  .discussion__slider{
+    &-swiper{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 0;
+      border-right:  1px solid #464646;
+      border-bottom: 1px solid #464646;
+      &:nth-child(4n+4){
+        border-right: none;
+      }
+      &:nth-child(n+5){
+        border-bottom: none;
+      }
+      &:nth-child(2n+5),
+      &:nth-child(2n+6){
+        border-bottom: none;
+      }
+
+      &:nth-child(n+6),
+      &:nth-child(5){
+        border-bottom: none;
+      }
+
+      &:nth-child(n+5),
+      &:nth-child(5){
+        border-bottom: none;
+      }
+
+      &:nth-child(n+6),
+      &:nth-child(2n+5){
+        border-bottom: none;
+      }
+    }
+    &-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0 10px 0;
+
+    }
+    &-data{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 36px;
+      color: #555454;
+    }
+    &-comments {
+      font-size: 12px;
+      line-height: 1;
+      border-bottom: 1px solid $black;
+      position: relative;
+      &::before {
+        content: '';
+        background-image: url("/images/discussion/coment.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        top: -3px;
+        right: 16px;
+      }
+    }
+    &-title{
+      font-weight: 550;
+      font-size: 17px;
+      line-height: 22px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    &-link{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url("/images/arrow_right.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 7px;
+        height: 10px;
+        top: 20px;
+        left: 80px;
+      }
+    }
+  }

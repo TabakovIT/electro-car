@@ -1,0 +1,50 @@
+.footer {
+  padding: 25px 0 35px 0;
+  background-color: $black;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+    color: $while;
+  }
+
+  &__column:not(:last-child) {
+    margin-right: 96px;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      line-height: 1;
+      color: $while;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid #FFFFFF;
+    padding-top: 7px;
+  }
+  &__copy {
+    color: $while;
+  }
+}

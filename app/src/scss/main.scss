@@ -1,0 +1,11 @@
+@import "reset"; //Сброс стилей
+@import "vars";
+@import "fonts";
+@import "parts/header";
+@import 'global'; //Основное
+@import "block/hero";
+@import "block/news";
+@import "block/discussion";
+@import "block/subscription";
+@import "block/all-news";//Все новости
+@import "parts/footer";
